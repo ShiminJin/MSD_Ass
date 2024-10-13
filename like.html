@@ -8,7 +8,11 @@
 <body>
     <button id="like-button">Like</button>
     <p id="like-count">0 Likes</p>
-
+    <button class="like-button" onclick="toggleLike()">
+        <span class="like-icon"></span>
+        <span class="like-text">喜欢</span>
+      </button>
+      
     <script>
         const likeButton = document.getElementById('like-button');
         const likeCount = document.getElementById('like-count');
