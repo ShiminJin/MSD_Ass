@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Like Button Example</title>
+</head>
+<body>
+    <button id="like-button">Like</button>
+    <p id="like-count">0 Likes</p>
+
+    <script>
+        const likeButton = document.getElementById('like-button');
+        const likeCount = document.getElementById('like-count');
+        let likes = 0;
+
+        likeButton.addEventListener('click', function() {
+            likes++;
+            likeButton.textContent = 'Liked';
+            likeCount.textContent = likes + ' Likes';
+        });
+    </script>
+</body>
+</html>
